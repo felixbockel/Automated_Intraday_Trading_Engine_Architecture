@@ -1,0 +1,20 @@
+flowchart TD
+    A["main.py — Orchestrator"] --> B["Premarket Context Loader"]
+    A --> C["Yahoo Finance Scanner"]
+    B --> D[("Data Store")]
+    C --> D
+    C --> E["Candidate Queue"]
+    E --> F["Candidate Worker"]
+    F --> G["Strategy Evaluation"]
+    F <--> H["IBKR Client"]
+    G --> I["Execution Engine"]
+    I <--> H
+    I --> J["Position State"]
+    J --> K["Focus Mode"]
+    K --> L["Exit Evaluation"]
+    L --> I
+    K <--> H
+    F --> D
+    H --> D
+    I --> D
+    K --> D
