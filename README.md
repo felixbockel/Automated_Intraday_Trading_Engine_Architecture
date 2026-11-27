@@ -173,6 +173,15 @@ Validate data and timestamps; audit candidate lifecycle and caching; reconcile o
 
 See [`docs/development_roadmap.md`](docs/development_roadmap.md).
 
+## Documents
+
+- [Data Pipeline](docs/data_pipeline.md)
+- [Execution and Position Management](docs/execution_and_position_management.md)
+- [System Architecture](docs/system_architecture.md)
+- [Development roadmap](docs/development_roadmap.md)
+- [Trading Workflow](docs/trading_workflow.md)
+- [Licence considerations](LICENSE_CHOICE.md)
+
 ## Public Repository Scope
 
 Selected Python implementation examples are included to demonstrate the system's architecture and software-engineering approach.
